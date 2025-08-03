@@ -1,0 +1,120 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #81fde2;
+  color: #406be0;
+  margin: 0;
+  padding: 30px;
+  max-width: 700px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.7rem;
+  color: #c562f7;
+  margin-bottom: 25px;
+  text-shadow: 1px 1px #750993;
+}
+
+.task-input {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  background-color: #fff;
+  padding: 15px;
+  border: 2px solid #ffd6e0;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(255, 105, 180, 0.1);
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="datetime-local"] {
+  flex: 1 1 45%;
+  padding: 12px;
+  border: 2px solid #ffb3c6;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #fff0f6;
+  color: #001858;
+  outline: none;
+  transition: 0.2s;
+}
+
+input:focus {
+  border-color: #ff5d8f;
+  background-color: #ffe6ee;
+}
+
+button {
+  flex: 1 1 100%;
+  background: linear-gradient(to right, #dfe9f3, #df409f);
+  color: white;
+  font-weight: bold;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: linear-gradient(to right, #e858cb, #e6256f);
+ 
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background: #ffffff;
+  border-left: 6px solid #ff5d8f;
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 12px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.2s ease;
+}
+
+li:hover {
+  transform: translateY(-2px);
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #999;
+}
+
+
+.actions button {
+  margin-left: 5px;
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.actions button:hover {
+  opacity: 0.9;
+}
+
+.actions button:first-child {
+  background-color: #58b368; 
+}
+
+.actions button:nth-child(2) {
+  background-color: #3a86ff; 
+}
+
+.actions .delete {
+  background-color: #ff595e;
+}
